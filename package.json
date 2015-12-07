@@ -1,0 +1,29 @@
+{
+	"name": "ColdFusion",
+	"displayName": "ColdFusion",
+	"description": "ColdFusion languages support and snippets",
+	"version": "0.0.1",
+	"publisher": "SketchPunk",
+	"engines": { "vscode": "^0.10.1" },
+	"categories": [ "Languages", "Snippets" ],
+
+	"contributes": {
+		"languages": [
+			{ "id": "basic", "aliases": [], "extensions": [], "configuration": "./basic.configuration.json"},
+			{ "id": "cfscript", "aliases": [], "extensions": [], "configuration": "./basic.configuration.json" },
+
+			{ "id": "cfmhtml", "aliases": ["ColdFusion Markup"], "extensions": [".cfm",".cfml"], "configuration": "./basic.configuration.json" },
+			{ "id": "cfc", "aliases": ["ColdFusion Component", "cfc"], "extensions": [".cfc"], "configuration": "./basic.configuration.json" }
+		],
+		"grammars": [
+			{"language": "basic", "scopeName": "text.cfml.basic", "path": "./syntaxes/coldfusion.tmLanguage" },
+			{"language": "cfmhtml", "scopeName": "text.html.cfm","path": "./syntaxes/htmlcfml.tmLanguage" },
+			{"language": "cfscript", "scopeName": "source.cfscript", "path": "./syntaxes/cfscript.tmLanguage" },
+			{"language": "cfc", "scopeName": "source.cfscript.cfc", "path": "./syntaxes/coldfusioncfc.tmLanguage"}
+		],
+		"snippets": [ 
+			{ "language": "cfmhtml", "path": "./snippets/snippets.json" },
+			{ "language": "cfc", "path": "./snippets/snippets.json" }
+		]
+	}
+}
