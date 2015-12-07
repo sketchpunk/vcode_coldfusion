@@ -4,6 +4,9 @@
 	"description": "ColdFusion languages support and snippets",
 	"version": "0.0.1",
 	"publisher": "SketchPunk",
+
+	"repository": { "type": "git", "url": "https://github.com/sketchpunk/vcode_coldfusion" },
+
 	"engines": { "vscode": "^0.10.1" },
 	"categories": [ "Languages", "Snippets" ],
 
@@ -27,3 +30,5 @@
 		]
 	}
 }
+
+
